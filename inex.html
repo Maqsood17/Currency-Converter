@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="style1.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/exchange.png">
+  </head>
+  <body>
+      <div id="main-container"> <!-- Main container for the page content -->
+        <span id="top-bar"> <!-- Top bar section of the page -->
+            <span id="date-time"> <!-- Container for the date and time display -->
+                <span id="date" class="date">YYYY-MM-DD</span> <!-- Container for the date display -->
+                <span id="clock" class="clock">00:00:00</span> <!-- Container for the clock display -->
+            </span>
+          </span>
+      </div>
+   
+    <div class="container">
+      <h2 class="h2">Currency Converter<span class="material-icons-outlined">
+        currency_exchange
+        </span></h2>
+      <form>
+        <div class="amount">
+          <p style="margin-bottom: .5rem;">Enter Amount</p>
+          <input value="1" type="text" />
+        </div>
+        <div class="dropdown">
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/SA/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">Welcome to Currency Change</div>
+        <button class="button"><span>Get Exchange Rate</span>
+        </button>
+      </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
